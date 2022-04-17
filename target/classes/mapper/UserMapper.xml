@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.amg.dao.UserMapper">
+	
+	<resultMap type="com.amg.domain.User" id="UserMap">
+		<result property="id" column="id" jdbcType="INTEGER"/>
+		<result property="username" column="username" jdbcType="VARCHAR"/>
+		<result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+	</resultMap>
+	<insert id="insertBatch">
+		insert into performance.user_memory(id,username,create_time)
+		values
+			<foreach collection="list" separator="," item="item">
+				(null,#{item.username},#{item.createTime})
+			</foreach>
+	</insert>
+	
+	
+	<!--查询指定行数据-->
+	<select id="queryAllByLimit" resultMap="UserMap">
+		select id,
+		       username,
+		       create_time
+		from performance.user where id > #{offset} limit #{limit}
+	</select>
+	
+	<!--通过实体作为筛选条件查询-->
+	<select id="queryAll" resultMap="UserMap">
+		select
+		id, username, create_time
+		from performance.user
+		
+	</select>
+	<select id="getCount" resultType="java.lang.Long">
+		select count(*) from performance.user;
+	</select>
+
+</mapper>

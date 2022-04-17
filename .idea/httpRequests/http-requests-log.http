@@ -1,0 +1,24 @@
+GET http://localhost:8080/async
+
+<> 2022-04-18T025117.200.txt
+
+###
+
+GET http://localhost:8080/async
+
+<> 2022-04-18T025053.200.txt
+
+###
+
+GET http://localhost:8080/sync/limit
+
+<> 2022-04-18T024620.200.txt
+
+###
+
+GET http://localhost:8080/sync
+
+<> 2022-04-18T023954.200.txt
+
+###
+
