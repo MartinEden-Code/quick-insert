@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88ba6cda-2c81-4f80-8222-c09c9fdf615f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/amg/api/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/amg/api/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/amg/api/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/amg/api/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +319,7 @@
       <updated>1637114975516</updated>
       <workItem from="1637114977244" duration="16914000" />
       <workItem from="1637198461171" duration="26292000" />
-      <workItem from="1650217981634" duration="4325000" />
+      <workItem from="1650217981634" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary="工作空间修改">
       <created>1650222096930</created>
@@ -331,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650222096930</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="各个测试">
+      <created>1650222607935</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650222607935</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -396,7 +400,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="工作空间修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="工作空间修改" />
+    <MESSAGE value="各个测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="各个测试" />
   </component>
   <component name="editorHistoryManager">
     <entry file="das://604f242d-3546-45cf-a6de-db63dc585471/schema/performance/table/product" />
