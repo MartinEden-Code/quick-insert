@@ -44,16 +44,26 @@ public class TestController {
 	}
 
 	/**
-	 * 多线程+分段sql
+	 * 多线程+分段sql(性能比单线程+基础sql提高了7倍)
 	 * 分段查询+组合的形式，可以采用多线程异步的形式，每个线程跑完数据拿出来之后就remove掉
+	 * 思想
+	 * 采用线程池的思想，核心线程设置在5个，最大线程设置在10个，关于线程数的选定网上有很多资料可以查到，这里就不赘述了
+	 * 这里同时采用Future异步模式，提升效率，关于Future的认识，可以看这篇文章 Java Future模式的使用
+	 * 缺点：gc时间还可优化
+	 *
 	 * @return
 	 */
 	@GetMapping("/async")
 	public String getAsyncData() {
 		List<User> list = userService.queryAllUseThreadPool(50000);
+		//测试时间1.38s
 		return "查询成功！" + list.size();
 	}
-	
+
+	/**
+	 * 插入数据
+	 * @return
+	 */
 	@GetMapping("/insertBatch")
 	public String insertBatch() {
 		
